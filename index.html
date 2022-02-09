@@ -6,55 +6,107 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
-
+    <!-- googleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Song+Myung&display=swap" rel="stylesheet">
+  
     <title>Hello, world!</title>
   </head>
-
     <body>
-      <header class="main-header">
-        <div class="row g-0">
-          <div class="toggle-menu head-box col-auto"><a data-bs-toggle="offcanvas" href="#offcanvasExample" aria-controls="offcanvasExample"><i class="bi bi-list"></i></a></div>
-          <div class="logo-wrapper col">
-            <img src="img/logo.png" alt="서울리뉴치과">
+      <!-- .navbar -->
+      <nav class="navbar navbar-light bg-light text-center">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="" href="#"><img src="img/logo.png" alt="서울리뉴치과"></a>
+        <img src="img/kakaotalk.svg" alt="kakao" width="50" height="50">
+        <div class="container-fluid">
+          <div class="offcanvas offcanvas-start" data-bs-backdrop="false" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">서울리뉴치과</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">서울리뉴치과</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    진료과목
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="produce/implant.html">임플란트</a></li>
+                    <li><a class="dropdown-item" href="produce/extraction.html">사랑니발치</a></li>
+                    <li><a class="dropdown-item" href="produce/chin.html">턱관절</a></li>
+                    <li><a class="dropdown-item" href="produce/prosthetics.html">심미보철</a></li>
+                    <li><a class="dropdown-item" href="produce/braces.html">치아교정</a></li>
+                    <!-- <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    커뮤니티
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="#">공지사항</a></li>
+                  </ul>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">진료시간</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">오시는 길</a>
+                  </li>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="kakao head-box col-auto"><i class="bi bi-chat-fill"></i></div>
         </div>
-      </header>
-
-      <!-- .offcanvas -->
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" data-bs-backdrop="false" data-bs-scroll="true">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </nav>
+      <!-- .navbar -->
+      
+      <!-- .slide -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="offcanvas-body">
-          <div>
-            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/adbertise01.png" class="d-block w-100" alt="...">
           </div>
-          <div class="dropdown mt-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+          <div class="carousel-item">
+            <img src="img/adbertise01.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/adbertise01.png" class="d-block w-100" alt="...">
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <!-- /.offcanvas -->
-      
-      
+      <!-- /.slide -->
+
+      <div class="animated-riborn text-light text-center" id="date">오늘의 진료시간 (화) 09:30~20:30 야간진료</div>
       <main class="container">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, sequi. Temporibus saepe amet impedit autem qui velit cumque, ullam molestiae enim reiciendis? Aperiam adipisci voluptatibus, provident sed voluptatum nesciunt? Illum nihil nulla labore a saepe vitae aperiam, at voluptatem ratione officiis hic repellat debitis iusto molestiae distinctio mollitia, delectus tenetur sunt quos. Aperiam quae suscipit quod id voluptas fugiat animi, ut itaque possimus est expedita. Autem, magnam error. A totam cum nihil atque, debitis amet tenetur nobis tempora hic aliquam quis beatae placeat vel assumenda qui voluptates aliquid aspernatur? Voluptas aperiam, dolor perspiciatis vero iusto, quas ex placeat temporibus ut deleniti animi ducimus illum maxime libero repudiandae! Voluptates dolorem odit, fugiat similique autem architecto doloremque perferendis esse voluptatem repudiandae assumenda voluptatibus! Eius, adipisci delectus! Delectus iste porro facere ab sint eum adipisci vero maiores dolore accusantium soluta itaque cum animi debitis architecto officia, nemo deleniti sequi voluptate? Repellendus, laudantium aperiam doloribus tenetur impedit possimus cumque voluptates dolorem aut adipisci illum harum, eos voluptatibus nulla similique laboriosam ratione numquam. Voluptatum eius iste in alias facilis blanditiis dignissimos voluptatem, id sint? Voluptatem, harum incidunt expedita amet, cum numquam dignissimos ratione autem omnis inventore aspernatur dolorem saepe voluptatibus ut tempore molestiae consequuntur debitis dolor, maiores alias! A deleniti, sequi dolore ipsam at quos ullam ipsa iure assumenda nostrum blanditiis, quaerat ducimus doloribus totam, harum consequatur rem sunt possimus cupiditate. Error perferendis rerum libero. Perspiciatis iure repudiandae cum quam quia. Sit, sint autem quasi velit aut nihil fugiat praesentium dolore eaque impedit laborum temporibus corporis soluta. Voluptatem beatae placeat deserunt. Repellendus reprehenderit aliquid esse doloribus officiis libero beatae animi minus ratione labore? Facere deleniti dolore unde atque repudiandae qui expedita! Expedita, eaque! Similique reiciendis omnis, tempora quidem nulla modi culpa fugiat, rerum voluptates sint perspiciatis praesentium cumque explicabo dolorum architecto consequatur ipsam animi eaque! Eum dicta possimus repudiandae mollitia fugit vel facilis provident error eveniet nam suscipit ab, unde est, perferendis saepe quo? Ducimus, nemo pariatur mollitia vel accusamus dolorem animi, molestiae odit quo suscipit fuga optio amet saepe ipsam ex provident exercitationem consequuntur adipisci porro odio placeat eius? Incidunt consequatur totam quisquam sint explicabo iste vero rerum voluptates inventore, earum atque odio magni voluptatibus vitae quaerat error nam expedita mollitia corrupti assumenda sequi, voluptatem quas dolore. Enim veritatis possimus autem ad ipsam, sapiente eligendi officia maxime sequi debitis libero aliquid. Minus natus consequatur sed distinctio alias, doloribus, saepe consectetur est qui ea tempora esse itaque voluptate suscipit magni laudantium ratione? Quae reprehenderit possimus, asperiores repudiandae repellat ipsa dignissimos error praesentium odio quia adipisci ut aliquam ullam tenetur. Expedita tempore asperiores dolorum impedit amet quam non ea, autem blanditiis iste repellendus nisi quidem saepe consequuntur cum modi, magni quo esse temporibus laudantium unde! Nulla, fugiat illum facilis optio itaque consequatur ab voluptatem sunt possimus enim maiores saepe velit atque fuga, quod natus assumenda aliquam at. Veritatis, voluptas! Hic aliquid soluta molestias cum ratione culpa ex magnam enim? Sit saepe nesciunt eius aliquam aperiam suscipit quis eum exercitationem aspernatur beatae, sapiente nisi doloremque minus, dolor quaerat corporis quas cumque consectetur error dignissimos, et labore ut a? Beatae similique porro pariatur. Minima laboriosam, ratione incidunt porro cumque earum minus recusandae sit eaque eum nobis, ab omnis, voluptate magnam blanditiis illum obcaecati. Necessitatibus delectus fuga aut nesciunt saepe unde minus quia earum nihil? Consequatur quod qui corporis aut, officiis mollitia in! Veniam iste quas ex. Ad facilis maxime repudiandae ex incidunt nulla provident aliquid accusamus repellat doloremque, iure expedita? Odio praesentium mollitia eligendi porro hic, dicta repellat ipsum consequatur possimus voluptatum quidem officia quisquam tempore neque laboriosam in suscipit molestiae incidunt animi exercitationem rem amet! Impedit, neque temporibus! Repellendus amet accusamus, rerum vel qui illum eveniet cupiditate neque ducimus quam, atque, at odit. Possimus quas debitis nisi harum quia, amet omnis sapiente pariatur culpa minima sed nostrum ipsa aliquid dignissimos officiis. Saepe modi omnis quasi laboriosam esse facere vitae quisquam error consequatur repellendus provident fugiat iste eligendi ipsa sint, ullam delectus excepturi ratione a. Quos nesciunt odio rem cumque! Explicabo sequi magni deserunt deleniti temporibus est nesciunt illum reprehenderit animi commodi. Aliquid officiis corporis magni quod impedit optio ut deserunt. Quo cumque exercitationem recusandae repellendus cupiditate ipsa provident debitis tenetur unde. Maiores nihil repellendus voluptas dolor fugit minima assumenda illum consequuntur alias corporis, non exercitationem quia magni excepturi? Ducimus debitis totam nostrum eum hic laudantium voluptatem quas iste, quisquam consequuntur assumenda tenetur iusto corrupti saepe nulla repellendus pariatur deleniti facere accusantium asperiores ullam ipsam neque autem magni! Necessitatibus, dolorum, aspernatur rem et magni provident voluptatum distinctio consequuntur officiis explicabo id ducimus quae voluptas officia laudantium hic optio. Fugiat excepturi pariatur voluptatum saepe ea, corrupti natus sint, similique delectus quas aliquam nesciunt asperiores vero dignissimos, blanditiis repellat inventore modi hic earum illo ad quo magni. Doloribus esse id voluptates maxime saepe neque. Accusantium saepe deserunt dignissimos accusamus minima veniam neque quos, soluta nisi, quis quam, maxime quisquam eos consequatur est pariatur placeat hic. Deserunt possimus corporis inventore rem officiis repellat porro illum mollitia, velit pariatur natus asperiores distinctio tempora molestias quisquam doloremque similique! Incidunt, ducimus ipsa! Accusamus corporis incidunt provident quia numquam fuga, similique sapiente suscipit, impedit dolorum rem eius blanditiis fugiat qui possimus soluta a libero ullam architecto unde alias. Et magnam officiis laboriosam dicta dolore doloremque a, quo nobis? Laboriosam aperiam quas nesciunt earum neque, quod quam architecto voluptatum totam reprehenderit, mollitia dignissimos optio at nihil a ipsum similique minus, necessitatibus ab quo tempora! Facilis possimus repellendus expedita, nisi iusto libero tempore voluptatibus! Temporibus, ab. Fugiat laudantium omnis quisquam eum blanditiis, consequuntur quos praesentium perferendis cupiditate officia veniam nobis. Quaerat commodi culpa debitis, officiis assumenda fugit nam perferendis, voluptate voluptas quae, aut voluptates iste quam odit doloremque suscipit a eveniet sed velit! Distinctio repellendus iusto ducimus reiciendis mollitia sunt, atque nesciunt repudiandae consectetur, error nihil dolorum? Obcaecati doloremque placeat assumenda inventore perferendis voluptas temporibus reprehenderit similique consequatur aliquid molestiae odit odio omnis, harum nisi! Reprehenderit quaerat voluptate amet dolore recusandae deleniti vitae illo architecto ab consequuntur cupiditate ad nisi soluta placeat doloribus, aperiam modi corrupti nemo.
-        </p>
+
+        
       </main>
 
       <section class="doc-portrait">
@@ -78,7 +130,7 @@
         </div>
       </div>
 
-      <div class="animated-riborn" id="date">오늘의 진료시간 (화) 09:30~20:30 야간진료</div>
+      <div class="animated-riborn text-light text-center" id="date">오늘의 진료시간 (화) 09:30~20:30 야간진료</div>
       
       <!-- #map -->
       <div class="row">
@@ -111,15 +163,7 @@
           </div>
       </nav>
       
-      <!-- Optional JavaScript; choose one of the two! -->
-      
-      <!-- Option 1: Bootstrap Bundle with Popper -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
       
-      <!-- Option 2: Separate Popper and Bootstrap JS -->
-      <!--
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
     </body>
 </html>
