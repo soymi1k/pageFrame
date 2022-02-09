@@ -34,8 +34,7 @@ body {
   transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 .social-banner {
-  height: 380px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
 }
 /* .riborn-animation  https://codepen.io/P1N2O/pen/pyBNzX*/
 .animated-riborn {

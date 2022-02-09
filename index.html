@@ -16,16 +16,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Song+Myung&display=swap" rel="stylesheet">
   
-    <title>Hello, world!</title>
+    <title>서울리뉴치과</title>
   </head>
     <body>
       <!-- .navbar -->
       <nav class="navbar navbar-light bg-light text-center">
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="" href="#"><img src="img/logo.png" alt="서울리뉴치과"></a>
-        <img src="img/kakaotalk.svg" alt="kakao" width="50" height="50">
+        <a class="" href="#"><img src="img/logo.svg" alt="서울리뉴치과"></a>
+        <a href=""><img src="img/kakaotalk.svg" alt="kakao" width="50" height="50"></a>
         <div class="container-fluid">
           <div class="offcanvas offcanvas-start" data-bs-backdrop="false" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
@@ -103,34 +103,68 @@
       </div>
       <!-- /.slide -->
 
-      <div class="animated-riborn text-light text-center" id="date">오늘의 진료시간 (화) 09:30~20:30 야간진료</div>
-      <main class="container">
+      <div class="animated-riborn text-light text-center py-1" id="date">오늘의 진료시간 (화) 09:30~20:30 야간진료</div>
 
-        
-      </main>
-
+      <!-- .doc-portrait -->
       <section class="doc-portrait">
-        <div class="container">
           <div class="row">
-            <p>
-              의료진의 실력에 따라 확연히 달라지는 치료 결과
-            </p>
-            <h2>
-              서울대 출신 의료진의 체계적인 협력 진료로
-              성공적인 치료결과까지 함께 하겠습니다.
-            </h2>
-            <img src="" alt="">
+            <div class="position-relative text-center">
+              <img class="pb-4 position-absolute top-50 start-50 translate-middle opacity-25" src="img/us_logo.svg" alt="">
+              <h6 class="mt-5 pt-5">
+                의료진의 실력에 따라 확연히 달라지는 치료 결과
+              </h6>
+              <h2 class="fw-normal">
+                <span class="fw-bold">서울대 출신 의료진</span>의 <span class="fw-bold" style="color: darkblue;">체계적인 협력 진료</span>로<br>
+                성공적인 치료결과까지 함께 하겠습니다.
+              </h2>
+            </div>
+            <a href=""><img src="" alt="photo"></a>
           </div>
-        </div>
+        <a class="" href=""><h4 class="text-center bg-dark py-1 text-light">의료진 약력 보기 <i class=" text-info bi bi-hand-index-thumb"></i></h4></a>
       </section>
+      <!-- /.doc-portrait -->
 
-      <div class="container">
-        <div class="row">
-          <section class="social-banner">social banner</section>
+      <div class="">
+        <div class="container">
+          <section class="row social-banner pb-5">
+            <h4 class="fw-lighter text-center text-secondary py-3">SEOUL RENEW DENTAL CLINIC</h4>
+            <article class="col-md-6">
+              <div class="p-3 my-1 my-md-0 mx-md-1 d-flex bg-light align-items-center justify-content-md-center justify-content-between">
+                <div class="d-flex flex-column">
+                  <div class="d-flex">
+                    <img class="bg-success" src="" alt="Naver">
+                    <div class="ms-2">
+                      <h5 class="mb-0">서울리뉴치과</h5>
+                      <h1 class="fw-bold text-success">네이버 예약</h1>
+                    </div>
+                  </div>
+                  <p class="d-none d-md-block pt-3">번거로운 진료예약<br>이제 편하게 예약하세요!</p>
+                </div>
+                <i class="bi bi-plus-circle fs-3 d-md-none"></i>
+              </div>
+            </article>
+
+            <article class="col-md-6">
+              <div class="p-3 my-1 my-md-0 mx-md-1 d-flex bg-light align-items-center justify-content-md-center justify-content-between">
+                <div class="d-flex flex-column">
+                  <div class="d-flex">
+                    <img class="" style="width: 55px;" src="img/kakaotalk.svg" alt="Kakao">
+                    <div class="ms-2">
+                      <h5 class="mb-0">서울리뉴치과</h5>
+                      <h1 class="fw-bold">카카오톡 상담</h1>
+                    </div>
+                  </div>
+                  <p class="d-none d-md-block pt-3">편하게 상담 문의주시면<br>친절히 답변해 드리겠습니다.</p>
+                </div>
+                <i class="bi bi-plus-circle fs-3 d-md-none"></i>
+              </div>
+            </article>
+
+          </section>
         </div>
       </div>
 
-      <div class="animated-riborn text-light text-center" id="date">오늘의 진료시간 (화) 09:30~20:30 야간진료</div>
+      <div class="animated-riborn text-light text-center py-1" id="date">오늘의 진료시간 (화) 09:30~20:30 야간진료</div>
       
       <!-- #map -->
       <div class="row">
@@ -139,10 +173,10 @@
             <div id="map">map</div>
           </section>
         </div>
-      </div>
+      </div><footer class="footer-wrap bg-dark text-light">
       <!-- /#map -->
       
-      <footer class="footer-wrap">
+      <footer class="footer-wrap bg-dark text-light">
         <div class="container">
           <div class="row">
             <div class="footer-content">
@@ -153,7 +187,7 @@
         </div>
       </footer>
       
-      <nav class="fixed-bottom">
+      <nav class="fixed-bottom d-md-none">
           <div class="row g-0">
             <div class="item-box tel col"></div>
             <div class="item-box n-book col"></div>
