@@ -21,6 +21,11 @@ num-font {
 body {
   font-family: "Noto Sans KR", sans-serif !important;
 }
+@media (min-width: 768px) {
+  #symbol {
+    height: 52px;
+  }
+}
 
 #offcanvasNavbar {
   top: 0; /* Height of navbar */
@@ -95,3 +100,25 @@ body {
 }
 
 /* /.fixed-bottom */
+
+.time-table dt,
+.time-table dd,
+.time-table span,
+.time-table ul,
+.time-table li,
+.time-table div {
+  display: flex;
+}
+
+.time-table div {
+  justify-content: space-between;
+}
+.time-table dt {
+  justify-content: space-between;
+  width: 10em;
+}
+.time-table dt span {
+  width: 70%;
+  color: darkblue;
+  justify-content: center;
+}
