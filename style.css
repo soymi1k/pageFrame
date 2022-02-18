@@ -123,3 +123,9 @@ body {
   color: darkblue;
   justify-content: center;
 }
+@media (min-width: 992px) {
+  .borderX-lg {
+    border-left: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+  }
+}

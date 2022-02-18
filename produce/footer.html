@@ -1,0 +1,130 @@
+ <!-- .social-banner -->
+ <div class="">
+    <div class="container">
+      <section class="row social-banner pb-5">
+        <h4 class="fw-lighter text-center text-secondary py-3">SEOUL RENEW DENTAL CLINIC</h4>
+        <article class="col-md-6">
+          <a href="https://booking.naver.com/booking/13/bizes/645796" target="”_blank”">
+            <div class="p-3 my-1 my-md-0 mx-md-1 d-flex bg-light text-black align-items-center justify-content-md-center justify-content-between">
+              <div class="d-flex flex-column">
+                <div class="d-flex">
+                  <img class="" src="../img/naver_logo.svg" style="width: 55px;" alt="Naver">
+                  <div class="ms-2">
+                    <h5 class="mb-0">서울리뉴치과</h5>
+                    <h1 class="fw-bold text-success">네이버 예약</h1>
+                  </div>
+                </div>
+                <p class="d-none d-md-block pt-3">번거로운 진료예약<br>이제 편하게 예약하세요!</p>
+              </div>
+              <i class="bi bi-plus-circle fs-3 d-md-none"></i>
+            </div>
+          </a>
+        </article>
+
+        <article class="col-md-6">
+          <a href="http://pf.kakao.com/_KBPnb" target="”_blank”">
+            <div class="p-3 my-1 my-md-0 mx-md-1 d-flex bg-light text-black align-items-center justify-content-md-center justify-content-between">
+              <div class="d-flex flex-column">
+                <div class="d-flex">
+                  <img class="" style="width: 55px;" src="../img/kakaotalk.svg" alt="Kakao">
+                  <div class="ms-2">
+                    <h5 class="mb-0">서울리뉴치과</h5>
+                    <h1 class="fw-bold">카카오톡 상담</h1>
+                  </div>
+                </div>
+                <p class="d-none d-md-block pt-3">편하게 상담 문의주시면<br>친절히 답변해 드리겠습니다.</p>
+              </div>
+              <i class="bi bi-plus-circle fs-3 d-md-none"></i>
+            </div>
+          </a>
+        </article>
+
+      </section>
+    </div>
+  </div>
+  <!-- /.social-banner -->
+
+
+  <div class="date animated-riborn text-light fs-6 fw-bold text-center py-1" >오늘의 진료시간 (화) 09:30~20:30 야간진료</div>
+  <script src="../app.js"></script>
+
+  
+  <section class="container">
+    <div class="row my-5">
+      <article class="col-md-6 mb-3">
+        <h3>상담전화</h3>
+        <a class="display-2 fw-bolder" href="tel:02-888-0053" style="color: darkblue;">02.<br class="d-none d-md-block">888.0053</a>
+      </article>
+      <article class="time-table col-md-6">
+        <h3>진료시간</h3>
+        <dl>
+          <div class="d-flex justify-content-between">
+              <dt>월 수 금</dt>
+              <dd>오전 10:00 ~ 오후 7:00</dd>
+          </div>
+          <div class="d-flex justify-content-between">
+              <dt>화 목<span>야간</span></dt>
+              <dd>오전 10:00 ~ 오후 9:00</dd>
+          </div>
+          <div class="d-flex justify-content-between">
+              <dt class="d-flex justify-content-between">토 일<span class="d-flex justify-content-center">점심시간 없음</span></dt>
+              <dd>오전 10:00 ~ 오후 2:30</dd>
+          </div>
+          <div>
+              <dt>점심시간</dt>
+              <dd>오후 1:00 ~ 오후 2:00</dd>
+          </div>
+        </dl>
+      </article> 
+    </div>
+  </section>
+  
+
+  <!-- #map -->
+  <div class="row">
+    <div class="col-12">
+      <section class="map-wrap">
+        <div id="map">map</div>
+      </section>
+    </div>
+  </div><footer class="footer-wrap bg-dark text-light">
+
+    <script type="text/javascript">
+      var map = new naver.maps.Map("map", {
+          center: new naver.maps.LatLng(37.481480203672376, 126.95321693593108),
+          // disableDoubleTapZoom: true,
+          draggable: false,
+          keyboardShortcuts: false,
+          zoom: 18,
+          zoomOrigin: new naver.maps.LatLng(37.481480203672376, 126.95321693593108),
+      });
+
+      var marker = new naver.maps.Marker({
+          position: new naver.maps.LatLng(37.481480203672376, 126.95321693593108),
+          map: map,
+      });
+    </script>
+  <!-- /#map -->
+  
+  <footer class="footer-wrap bg-dark text-light">
+    <div class="container">
+      <div class="row">
+        <div class="footer-content">
+          footer
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+  
+  <nav class="fixed-bottom d-md-none">
+    <div class="row g-0">
+      <div class="item-box tel col"></div>
+      <div class="item-box n-book col"></div>
+      <div class="item-box kakao-fixed col"></div>
+      <div class="item-box n-blog col"></div>
+      <div class="item-box time-fixed col"></div>
+    </div>
+  </nav>
+
+
