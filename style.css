@@ -129,3 +129,10 @@ body {
     border-right: 1px solid #dee2e6;
   }
 }
+
+.bg-dblue {
+  background-color: darkblue;
+}
+.text-dblue {
+  color: darkblue;
+}
