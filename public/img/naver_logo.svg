@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="14.111111mm"
+   height="14.111111mm"
+   viewBox="0 0 14.111111 14.111111"
+   version="1.1"
+   id="svg3299"
+   inkscape:version="1.1.1 (c3084ef, 2021-09-22)"
+   sodipodi:docname="naver_logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview3301"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="3.2983812"
+     inkscape:cx="41.990295"
+     inkscape:cy="53.207919"
+     inkscape:window-width="1280"
+     inkscape:window-height="747"
+     inkscape:window-x="60"
+     inkscape:window-y="720"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs3296" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-131.64262,-71.200508)">
+    <g
+       id="g3381"
+       transform="translate(-15.176106,-2.0753649)">
+      <g
+         id="g1176-8"
+         transform="matrix(0.35277777,0,0,-0.35277777,159.51873,87.386984)">
+        <path
+           d="m 0,0 h -32 c -2.2,0 -4,1.8 -4,4 v 32 c 0,2.2 1.8,4 4,4 H 0 c 2.2,0 4,-1.8 4,-4 V 4 C 4,1.8 2.2,0 0,0"
+           style="fill:#03c75a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path1178-6" />
+      </g>
+      <g
+         id="g1180-5"
+         transform="matrix(0.35277777,0,0,-0.35277777,154.83719,80.520234)">
+        <path
+           d="m 0,0 -5.683,8.135 h -4.711 v -15.2 h 4.935 V 1.07 l 5.683,-8.135 h 4.711 v 15.2 H 0 Z"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path1182-7" />
+      </g>
+    </g>
+  </g>
+</svg>

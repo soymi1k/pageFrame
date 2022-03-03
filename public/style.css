@@ -1,0 +1,138 @@
+a {
+  text-decoration: none !important;
+  /* color: #e5e5e5 !important; */
+}
+
+/* disable horizontal scroll https://www.codegrepper.com/code-examples/whatever/DISABLE+the+Horizontal+Scroll */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/* /.disable hrizontal scroll */
+strong-font {
+  font-family: "Song Myung", serif !important;
+}
+
+num-font {
+  font-family: "Squada One", cursive !important;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif !important;
+}
+@media (min-width: 768px) {
+  #symbol {
+    height: 52px;
+  }
+}
+
+#offcanvasNavbar {
+  top: 0; /* Height of navbar */
+  bottom: 14vw;
+  /* left: 100%;
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  overflow-y: auto;
+  visibility: hidden; */
+  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.social-banner {
+  /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
+}
+/* .riborn-animation  https://codepen.io/P1N2O/pen/pyBNzX*/
+.animated-riborn {
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+  background: linear-gradient(-45deg, #feac5e, #c779d0, #4bc0c8);
+  background-size: 400% 400%;
+  animation: gradient 6s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* /.riborn-animation */
+
+.map-wrap {
+  height: 380px;
+}
+#map {
+  height: 380px;
+  border: 10px solid #efefef;
+}
+
+/* .footer */
+.footer-wrap {
+}
+.footer-wrap .footer-content {
+  margin-bottom: 16vw;
+  height: 500px;
+}
+/* /.footer */
+
+/* .fixed-bottom */
+.item-box {
+  height: 14vw;
+  background-color: cadetblue;
+  box-shadow: inset 1px 0px 4px#000;
+}
+.tel {
+  background-color: darkblue;
+}
+.n-book {
+  background-color: green;
+}
+.kakao-fixed {
+  background-color: #f9e000;
+}
+.n-blog {
+  background-color: green;
+}
+.time-fixed {
+  background-color: darkblue;
+}
+
+/* /.fixed-bottom */
+
+.time-table dt,
+.time-table dd,
+.time-table span,
+.time-table ul,
+.time-table li,
+.time-table div {
+  display: flex;
+}
+
+.time-table div {
+  justify-content: space-between;
+}
+.time-table dt {
+  justify-content: space-between;
+  width: 10em;
+}
+.time-table dt span {
+  width: 70%;
+  color: darkblue;
+  justify-content: center;
+}
+@media (min-width: 992px) {
+  .borderX-lg {
+    border-left: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+  }
+}
+
+.bg-dblue {
+  background-color: darkblue;
+}
+.text-dblue {
+  color: darkblue;
+}
