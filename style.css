@@ -136,3 +136,11 @@ body {
 .text-dblue {
   color: darkblue;
 }
+.fit {
+  height: fit-content;
+  width: fit-content;
+}
+.img-w {
+  min-width: 150px;
+  max-width: 450px;
+}

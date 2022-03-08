@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- googleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Song+Myung&family=Squada+One&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=vhx0n340cv"></script>
+
+  
+    <title>Hello, world!</title>
+  </head>
+    <body>
+      <!-- .navbar -->
+      <div id="nav-placeholder"></div>
+      <script>
+        $(function(){
+          $("#nav-placeholder").load("nav.html");
+        });
+      </script>
+      <!-- /.navbar -->
+
+      <main>
+        <h1 class="text-center my-5"><span class="fw-light">서울리뉴치과</span> 의료진 소개</h1>
+
+        <section class="doc-portrait">
+            <div class="container">
+                <div class="text-center">
+                    <img class="img-w d-md-none" src="img/me01.png" alt="photo">
+                </div>
+                <div class="row">
+                    <div class="row col-md-6">
+                        <div>
+                            <p class="mb-0 text-light fit px-1 bg-dblue">구강악면외과</p>
+                            <h1 class="text-dblue">박상헌 <span class="text-black fw-normal fs-3">대표원장</span></h1>
+                        </div>
+                        <ul class="fs-5">
+                            <li>구강악안면외과 전문의</li>
+                            <li>통합치의학과 전문의</li>
+                            <li>서울대학교 화학과 졸업</li>
+                            <li>서울대학교 치의학과 졸업</li>
+                            <li>서울대학교 치의학과대학원 석사</li>
+                            <li>서울대학교 치의학대학원 박사 수료</li>
+                            <li>서울대학교 치과병원 인턴</li>
+                            <li>서울대학교 치과병원 구강악안면외과 레지던트</li>
+                            <li>대한악안면성형재건외과학회 인정의</li>
+                            <li>대한악안면성형재건외과학회 정회원</li>
+                            <li>대한구강악안면외과 학회 정회원</li>
+                            <li>미국 심장협회(AHA)Basic life</li>
+                            <li>Support(BLS)intructor</li>
+                        </ul>
+                        <h3>
+                            매일 환자를 위해 고민하는 의사<br>
+                            구강악안면외과 대표원장이<br>
+                            책임지고 진료합니다.
+                        </h3>
+                    </div>
+                    <div class="col-md-6 end-0">
+                        <img class="img-w d-none d-md-block" src="img/me01.png" alt="photo">
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+
+        <div class=" text-center">
+            <img class="" src="img/us_logo.svg" alt="">
+            <h2 class="fw-normal">
+              <span class="fw-bold">서울대 출신 </span><span class="fw-bold" style="color: darkblue;"><br class="d-sm-none">보건복지부 인증 전문의 의료진</span>의<br>
+              개인별 맞춤 진료
+            </h2>
+            <p>
+                서울리뉴치과는 서울대 출신이 보건복지부가 인증한 전문의가 풍부한 전문지식과<br>
+                다양한 임상경험을 바탕으로 개인에 맞는 가장 적합한 치료방법을 제시합니다.
+            </p>
+        </div>
+
+        
+      </main>
+      <div class="" id="footer-placeholder"></div>
+      <script>
+        $(function(){
+          $("#footer-placeholder").load("footer.html");
+        });
+      </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
